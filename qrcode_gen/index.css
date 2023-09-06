@@ -26,11 +26,6 @@
 	width: 400px;
 }
 
-.data {
-	display: flex;
-	justify-content: space-between;
-}
-
 #qualityValue {
 	font-size: 20px;
 }
@@ -55,12 +50,6 @@
 
 #content {
 	width: 300px;
-	text-align: center;
-	font-family: "Poppins";
-	border-radius: 12px;
-}
-#format {
-	width: 100px;
 	text-align: center;
 	font-family: "Poppins";
 	border-radius: 12px;
