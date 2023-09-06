@@ -9,6 +9,7 @@ slider.addEventListener("input", () => {
 const generate = (e) => {
 	e.preventDefault();
 	const qrdata = document.getElementById("content").value;
+	const format = document.getElementById("format").value;
 	const resolution = document.getElementById("quality").value;
 
 	const url = `https://api.qrserver.com/v1/create-qr-code/?data=${qrdata}&size=${resolution}x${resolution}&format=${format}`;
