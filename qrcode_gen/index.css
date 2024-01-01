@@ -3,13 +3,13 @@
 * {
   margin: 0px;
   border: 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 .container {
-  background-color: #b9b4c7;
+  background-color: #c4b5fd;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -25,16 +25,11 @@
   width: 400px;
 }
 
-#qualityValue {
-  font-size: 15px;
-}
-
 .image {
   width: 300px;
   height: 300px;
-  border: 3px solid black;
   border-radius: 10px;
-  background-color: #faf0e6;
+  background-color: #e3ddf0;
   color: black;
   text-align: center;
   display: flex;
@@ -42,26 +37,38 @@
   align-items: center;
 }
 
+.data {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #image-container {
   width: 97%;
   height: 97%;
+  visibility: hidden;
+  position: relative;
 }
-#quality::-webkit-slider-thumb {
-  cursor: pointer;
-  background: #704b01;
-  opacity: 0.8;
+
+#image-container::after {
+  content: attr(alt);
+  visibility: visible;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 #content {
   width: 300px;
   height: 30px;
   text-align: center;
   font-family: "Poppins";
+  background-color: #e3ddf0;
   border-radius: 8px;
-  border: 2px solid rgb(51, 52, 97);
-  background-color: #faf0e6;
 }
 #content::placeholder {
-  color: rgb(153, 151, 155);
   font-size: 15px;
 }
 
@@ -70,21 +77,19 @@
   height: 45px;
   border-radius: 12px;
   font-size: 16px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
-  font-family: "Poppins";
-  background-color: #5c5470;
-  color: #faf0e6;
+  background-color: #8b5cf6;
+  color: white;
+}
+
+#generatebtn:hover {
+  cursor: pointer;
+  background-color: #7d53fc;
 }
 
 @media screen and (max-width: 750px) {
   * {
     font-size: 15px;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
   }
   .form-details {
     gap: 20px;
@@ -98,8 +103,5 @@
   #generatebtn {
     height: 35px;
     border-radius: 8px;
-  }
-  #qualityValue {
-    font-size: 15px;
   }
 }

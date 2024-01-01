@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QR Generator</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
 
-<body class="container">
+  <body class="container">
     <div class="details">
-        <form id="form" class="form-details">
-            <div class="data">
-                <label for="content">Data</label>
-                <input id="content" type="text" placeholder="Enter Link or Text to create QR" required>
-            </div>
-            <input id="generatebtn" type="submit" value="Generate">
-        </form>
-    </div>
-        <div class="image">
-            <img id="image-container" src="" alt="QR Appears here" />
+      <form id="form" class="form-details">
+        <div class="data">
+          <label for="content">Data</label>
+          <input
+            id="content"
+            type="text"
+            placeholder="Enter Link or Text to create QR"
+            required
+          />
         </div>
+        <input id="generatebtn" type="submit" value="Generate" />
+      </form>
+    </div>
+    <div class="image">
+      <img id="image-container" src="" alt="QR Appears here" />
+    </div>
 
     <script src="./index.js"></script>
-</body>
-
+  </body>
 </html>
